@@ -177,7 +177,7 @@ class CKCamera(context: ThemedReactContext) : FrameLayout(context), LifecycleObs
                     }
                 }
             }
-            orientationListener!!.enable()
+            orientationListener!!.disable()
 
             val scaleDetector =  ScaleGestureDetector(context, object: ScaleGestureDetector.SimpleOnScaleGestureListener() {
                 override fun onScale(detector: ScaleGestureDetector?): Boolean {
